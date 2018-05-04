@@ -156,6 +156,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Kolegij_literatura.cs"/>
+    <Compile Include="Models\Kolegij_opterecenje.cs"/>
+    <Compile Include="Models\Kolegij_pracenje.cs"/>
+    <Compile Include="Models\Kolegij_teme.cs"/>
+    <Compile Include="Models\Kolegij_vrsta_nastave.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
