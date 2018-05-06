@@ -195,6 +195,20 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Compile Include="Models\Kolegij_literatura.cs"/>
+    <Compile Include="Models\Kolegij_opterecenje.cs"/>
+    <Compile Include="Models\Kolegij_pracenje.cs"/>
+    <Compile Include="Models\Kolegij_teme.cs"/>
+    <Compile Include="Models\Kolegij_vrsta_nastave.cs"/>
+    <Compile Include="Models\Arhiva.cs" />
+    <Compile Include="Models\Kolegij.cs" />
+    <Compile Include="Models\Kolegij_ishod.cs" />
+    <Compile Include="Models\Kolegij_nastavnik.cs" />
+    <Compile Include="Models\Kolegij_opce_info.cs" />
+    <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\Program_kolegij.cs" />
+    <Compile Include="Models\Studijski_program.cs" />
+    <Compile Include="Models\Ustanova.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
