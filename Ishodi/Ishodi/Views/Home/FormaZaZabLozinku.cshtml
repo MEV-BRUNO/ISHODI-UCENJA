@@ -1,0 +1,43 @@
+﻿@model Ishodi.Models.ModelZaPrijavu
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div style="width: 400px; margin-left: auto; margin-right:auto;">
+        <a href='/'>
+            <img src="~/Content/Slike/Logo.jpg" class="center-block" alt="" />
+        </a>
+        <div class="form-horizontal">
+            
+
+            <input type="submit" value="Upiši vašu valjanu e-mail adresu" disabled class="btn btn-primary btn-md" />
+            <p />
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", placeholder = "Vaša e-mail adresa" } })
+                </div>
+            </div>
+
+            <input type="submit" value="Obnova lozinke" class="btn btn-success btn-sm" />
+
+
+            <p />
+            <div class="col-md-10">
+                <input type="button" value="Prijava" onclick="location.href='@Url.Action("FormaZaPrijavu", "Home")'" class="btn btn-link btn-sm" />
+                <input type="button" value="Zaboravljena lozinka" onclick="location.href='@Url.Action("FormaZaZabLozinku", "Home")'" class="btn btn-link btn-sm"  style="text-decoration: underline" />
+                <input type="button" value="Registracija" onclick="location.href='@Url.Action("FormaZaRegistraciju", "Home")'" class="btn btn-link btn-sm" />
+            </div>
+        </div>
+    </div>
+
+
+
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
