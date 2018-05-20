@@ -26,5 +26,26 @@ namespace Ishodi.Controllers
 
             return View();
         }
+
+        public ActionResult FormaZaPrijavu()
+        {
+            ViewBag.Message = "FormaZaPrijavu";
+            return View();
+        }
+
+
+        public ActionResult FormaZaRegistraciju()
+        {
+            ViewBag.Message = "FormaZaRegistraciju";
+
+            return View();
+        }
+
+        public ActionResult FormaZaZabLozinku()
+        {
+            ViewBag.Message = "FormaZaZabLozinku";
+
+            return View();
+        }
     }
 }
