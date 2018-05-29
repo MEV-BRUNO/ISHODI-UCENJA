@@ -8,35 +8,35 @@ namespace Ishodi.Models
 {
     public class Kolegij_opce_info
     {
-        [Required]
-        public int id_program { get; set; }
-        [Required]
-        public int id_kolegij { get; set; }
-        [Required]
-        public int status_kolegija { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_program { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_kolegij { get; set; }
+        [Required(ErrorMessage = "Status je obavezno polje!")]
+        public string status_kolegija { get; set; }
+        [Required(ErrorMessage = "ECTS je obavezno polje!")]
         public int ECTS { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string izvodenje_nastave { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string cilj { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string uvjeti_polaganja { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string obaveza_studenta { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string ocjenjivanje_vrednovaje { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string pracenje_kvalitete { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string pohadanje_nastave { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string kontakt_nastavnik { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string info { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string radovi { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string ostalo { get; set; }
 
     }

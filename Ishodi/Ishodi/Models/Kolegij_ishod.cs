@@ -8,17 +8,17 @@ namespace Ishodi.Models
 {
     public class Kolegij_ishod
     {
-        [Required]
+        [Required(ErrorMessage ="Id je obavezno polje!")]
         public long id_ishod { get; set; }
-        [Required]
-        public int id_program { get; set; }
-        [Required]
-        public int id_kolegij { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_program { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_kolegij { get; set; }
+        [Required(ErrorMessage ="Obavezno polje!")]
         public int rb { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Obavezno polje!")]
         public string ishod { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Obavezno polje!")]
         public string razina { get; set; }
 
     }

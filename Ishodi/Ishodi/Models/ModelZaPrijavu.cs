@@ -10,38 +10,38 @@ namespace Ishodi.Models
     {
 
         // ZA prijavu
-        [Required(ErrorMessage = "The username is required")]
+        [Required(ErrorMessage = "Ime je obavezno polje!")]
         public string korisnickoime { get; set; }
 
-        [Required(ErrorMessage = "The password is required")]
+        [Required(ErrorMessage = "Lozinka je obavezno polje!")]
         public string korisnickalozinka { get; set; }
 
         // Za registraciju
-        [Required(ErrorMessage = "The name is required")]
+        [Required(ErrorMessage = "Ime je obavezno polje")]
         public string name { get; set; }
 
-        [Required(ErrorMessage = "The surname is required")]
+        [Required(ErrorMessage = "Prezime je obavezno polje!")]
         public string surname { get; set; }
 
-        [Required(ErrorMessage = "The username is required")]
+        [Required(ErrorMessage = "Korisničko ime je obavezno polje!")]
         public string username { get; set; }
 
-        [Required(ErrorMessage = "The email address is required")]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        [Required(ErrorMessage = "E-mail adresa je obavezno polje!")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Pogrešna e-mail adresa")]
         public string email { get; set; }
 
 
-        [Required(ErrorMessage = "The password is required")]
+        [Required(ErrorMessage = "Lozinka je obavezno polje!")]
         public string password { get; set; }
 
-        [Required(ErrorMessage = "The repeat password is required")]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string repeatpassword { get; set; }
 
 
         // za zaboravljena lozinka
 
-        [Required(ErrorMessage = "The email address is required")]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        [Required(ErrorMessage = "E-mail adresa je obavezno polje!")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Pogrešna e-mail adresa")]
         public string vasaemailadresa { get; set; }
 
 

@@ -8,12 +8,12 @@ namespace Ishodi.Models
 {
     public class Kolegij_nastavnik
     {
-        [Required]
-        public int id_program { get; set; }
-        [Required]
-        public int id_kolegij { get; set; }
-        [Required]
-        public int id_korisnik { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_program { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_kolegij { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_korisnik { get; set; }
 
 
     }

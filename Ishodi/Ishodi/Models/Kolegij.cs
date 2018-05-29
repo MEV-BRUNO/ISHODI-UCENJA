@@ -8,13 +8,13 @@ namespace Ishodi.Models
 {
     public class Kolegij
     {
-        [Required]
-        public int id_kolegij { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Id je obavezno polje!")]
+        public long id_kolegij { get; set; }
+        [Required(ErrorMessage ="Naziv je obavezno polje!")]
         public string naziv { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Kratica je obavezno polje!")]
         public string kratica { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Šifra je obavezno polje")]
         public string sifra { get; set; }
 
     }

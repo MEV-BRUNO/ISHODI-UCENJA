@@ -8,35 +8,35 @@ namespace Ishodi.Models
 {
     public class Kolegij_vrsta_nastave
     {
-        [Required]
-        public int id_program { get; set; }
-        [Required]
-        public int id_kolegij { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_program { get; set; }
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_kolegij { get; set; }
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string predavanje { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string seminari { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string vjezbe { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string na_daljinu { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string mjesovito { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string terenska { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string samostalni_rad { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string multimedija { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string laboratorij { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string mentor { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string ostalo { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string ostalo_selekt { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string komentar { get; set; }
         
     }

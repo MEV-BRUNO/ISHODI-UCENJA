@@ -8,13 +8,13 @@ namespace Ishodi.Models
 {
     public class Ustanova
     {
-        [Required]
-        public int id_ustanova { get; set;}
-        [Required]
+        [Required(ErrorMessage = "Id je obavezno polje!")]
+        public long id_ustanova { get; set;}
+        [Required(ErrorMessage = "Naziv je obavezno polje!")]
         public string naziv { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Adresa je obavezno polje!")]
         public string adresa { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Obavezno polje!")]
         public string grad { get; set; }
 
     }
