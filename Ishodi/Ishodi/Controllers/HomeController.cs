@@ -47,5 +47,10 @@ namespace Ishodi.Controllers
 
             return View();
         }
+        public ActionResult KolegijiStudijskihPrograma()
+        {
+            ViewBag.Message = "KolegijiStudijskihPrograma";
+            return View();
+        }
     }
 }

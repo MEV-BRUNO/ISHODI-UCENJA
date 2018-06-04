@@ -214,6 +214,7 @@
     <Content Include="Views\Home\FormaZaPrijavu.cshtml" />
     <Content Include="Views\Home\FormaZaZabLozinku.cshtml" />
     <Content Include="Views\Home\FormaZaRegistraciju.cshtml" />
+    <Content Include="Views\Home\KolegijiStudijskihPrograma.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
