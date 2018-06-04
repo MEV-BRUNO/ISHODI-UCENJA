@@ -48,9 +48,16 @@ namespace Ishodi.Controllers
             return View();
         }
 
+
         public ActionResult Studijskiprogrami()
         {
             ViewBag.Message = "Studijskiprogrami";
+            return View();
+        }
+
+        public ActionResult KolegijiStudijskihPrograma()
+        {
+            ViewBag.Message = "KolegijiStudijskihPrograma";
 
             return View();
         }

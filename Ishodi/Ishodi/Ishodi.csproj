@@ -1777,6 +1777,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Slike\Logo.JPG" />
+
     <Content Include="css\bootstrap.css" />
     <Content Include="css\camera.css" />
     <Content Include="css\caption.css" />
@@ -1788,6 +1789,7 @@
     <Content Include="css\style.css" />
     <Content Include="css\StyleSheet1.css" />
     <Content Include="css\yamm.css" />
+
     <Content Include="favicon.ico" />
     <Content Include="Models\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2228,7 +2230,11 @@
     <Content Include="Views\Home\FormaZaPrijavu.cshtml" />
     <Content Include="Views\Home\FormaZaZabLozinku.cshtml" />
     <Content Include="Views\Home\FormaZaRegistraciju.cshtml" />
+
     <Content Include="Views\Home\Studijskiprogrami.cshtml" />
+
+    <Content Include="Views\Home\KolegijiStudijskihPrograma.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

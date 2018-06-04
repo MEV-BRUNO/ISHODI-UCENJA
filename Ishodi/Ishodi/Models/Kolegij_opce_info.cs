@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ishodi.Models
 {
     [Table("kolegij opce info")]
+
     public class Kolegij_opce_info
     {
         [Required(ErrorMessage = "Id je obavezno polje!")]

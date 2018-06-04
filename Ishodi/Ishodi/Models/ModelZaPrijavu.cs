@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+
 using System.ComponentModel.DataAnnotations.Schema;
+
 using System.Linq;
 using System.Web;
 
 namespace Ishodi.Models
 {
+
     [Table("modelzaprijavu")]
+
     public class ModelZaPrijavu
     {
 
         // ZA prijavu
+
         [Required(ErrorMessage = "Ime je obavezno polje!")] 
         public string korisnickoime { get; set; } 
+
+        [Required(ErrorMessage = "Ime je obavezno polje!")]
+        public string korisnickoime { get; set; }
+
 
         [Required(ErrorMessage = "Lozinka je obavezno polje!")]
         public string korisnickalozinka { get; set; }
