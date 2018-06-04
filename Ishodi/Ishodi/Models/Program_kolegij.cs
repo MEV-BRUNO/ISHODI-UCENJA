@@ -4,8 +4,16 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Ishodi.Models
 {
+    [Table("program_kolegij")]
+
+
+namespace Ishodi.Models
+{
+
     public class Program_kolegij
     {
         [Required(ErrorMessage = "Id je obavezno polje!")]

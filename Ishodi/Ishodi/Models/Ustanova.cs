@@ -4,13 +4,23 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
+using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("ustanova")]
+
+
 namespace Ishodi.Models
 {
+
     public class Ustanova
     {
         [Required(ErrorMessage = "Id je obavezno polje!")]
         public long id_ustanova { get; set;}
+
+        [Required(ErrorMessage = "Naziv je obavezno polje!")]  
+
         [Required(ErrorMessage = "Naziv je obavezno polje!")]
+
         public string naziv { get; set; }
         [Required(ErrorMessage = "Adresa je obavezno polje!")]
         public string adresa { get; set; }

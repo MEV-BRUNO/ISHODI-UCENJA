@@ -4,8 +4,12 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Ishodi.Models
 {
+    [Table("kolegij")]
+
     public class Kolegij
     {
         [Required(ErrorMessage ="Id je obavezno polje!")]
