@@ -20,9 +20,6 @@ namespace Ishodi.Models
         [Required(ErrorMessage = "Ime je obavezno polje!")] 
         public string korisnickoime { get; set; } 
 
-        [Required(ErrorMessage = "Ime je obavezno polje!")]
-        public string korisnickoime { get; set; }
-
 
         [Required(ErrorMessage = "Lozinka je obavezno polje!")]
         public string korisnickalozinka { get; set; }
