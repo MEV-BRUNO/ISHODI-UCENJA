@@ -11,8 +11,6 @@ namespace Ishodi.Models
     [Table("studijski_program")]
 
 
-namespace Ishodi.Models
-{
 
     public class Studijski_program
     {
