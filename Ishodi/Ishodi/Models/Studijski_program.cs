@@ -24,6 +24,7 @@ namespace Ishodi.Models
         public int ak_godina { get; set; }
         [Required(ErrorMessage = "Obavezno polje!")]
         public string opis { get; set; }
+        
 
     }
 }
