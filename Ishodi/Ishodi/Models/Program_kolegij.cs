@@ -11,8 +11,7 @@ namespace Ishodi.Models
     [Table("program_kolegij")]
 
 
-namespace Ishodi.Models
-{
+
 
     public class Program_kolegij
     {
